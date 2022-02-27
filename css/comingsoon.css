@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.jumbotron {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 70vh;
+  background: url("../img/Channel_Art-min.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-origin: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(151, 150, 150);
+}
+.jumbotron__logo {
+  width: 250px;
+  margin-top: -10vh;
+}
+.stats {
+  /* border: 1px solid black; */
+  height: 100px;
+  width: 80%;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+.coming {
+    width: 100%;
+    min-height: 70vh;
+    padding: 1rem;
+}
+.title-container{
+    width: 80vw;
+    min-height: 60vh;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+}
+
+.comingsoon{
+  text-align: center;
+  font-size: 5rem;
+  color: rgb(71, 71, 71);
+  padding: 25vh;
+  /* margin: 25vh; */
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron{
+    background-image: url(../img/Channel_Art-min.jpg);
+  }
+  .content-container {
+    flex-direction: column-reverse;
+    border-bottom: 1px solid grey;
+  }
+  .content-item {
+    
+    width: 100%;
+    height: 300px;
+  }
+  .content--image {
+    overflow-x: hidden;
+  }
+  .content--heading {
+    font-size: 1.4rem;
+  }
+  .read-more{
+    width: 50%;
+  }
+  .content--image > img {
+    left: 2.3rem;
+    /* align-items: center; */
+    /* height: 200px; */
+    /* height: 150px; */
+    width: 80vw;
+  }
+  .jumbotron__logo {
+    width: 200px;
+  }
+  .content--text-wrapper {
+    width: 90%;
+  }
+  .stats{
+    width: 80%;
+    border-radius: 10vh;
+  }
+  .title{
+    font-size: 1.5rem;
+  }
+  .title-container{
+    width: 90%;
+  }
+  .comingsoon{
+    width: 80%;
+    text-align: center;
+    font-size: 4rem;
+    padding: 0%;
+    padding-top: 20vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
